@@ -1,0 +1,328 @@
+@use "mixins";
+@use "variables" as *; // if you want variables globally
+
+// Use mixins with the namespace:
+@include mixins.bem("profile") {
+  display: flex;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: $white;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  overflow: hidden;
+  min-height: 90vh;
+
+  @include mixins.respond(mobile) {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  @include mixins.bem("profile", "sidebar") {
+    background: linear-gradient(135deg, $primary 0%, #b993ff 100%);
+    color: $white;
+    width: $sidebar-width;
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+
+    @include mixins.respond(mobile) {
+      width: 100%;
+      border-radius: $border-radius $border-radius 0 0;
+      padding: 2rem 1rem;
+    }
+  }
+
+  @include mixins.bem("profile", "photo") {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid $white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  @include mixins.bem("profile", "name") {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-align: center;
+  }
+
+  @include mixins.bem("profile", "role") {
+    color: $accent;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  @include mixins.bem("profile", "quote") {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: $white;
+    i {
+      color: $accent;
+      margin-right: 0.5rem;
+    }
+    footer {
+      display: block;
+      font-size: 0.9em;
+      color: $accent;
+      margin-top: 0.5em;
+    }
+  }
+
+  @include mixins.bem("profile", "contact") {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+    li {
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+      i {
+        margin-right: 0.7rem;
+        color: $accent;
+      }
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include mixins.bem("profile", "socials") {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    a {
+      color: $white;
+      font-size: 1.3rem;
+      transition: color 0.2s;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  @include mixins.bem("profile", "languages") {
+    margin-top: auto;
+    width: 100%;
+    div {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      .profile__flag {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+      }
+      .profile__lang-level {
+        margin-left: auto;
+        font-size: 0.9em;
+        color: $accent;
+      }
+    }
+  }
+
+  @include mixins.bem("profile", "main") {
+    flex: 1 1 0;
+    padding: 2.5rem 2.5rem 2.5rem 2rem;
+    background: $white;
+    border-radius: 0 $border-radius $border-radius 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    @include mixins.respond(mobile) {
+      border-radius: 0 0 $border-radius $border-radius;
+      padding: 2rem 1rem;
+    }
+  }
+
+  @include mixins.bem("profile", "section") {
+    margin-bottom: 1.5rem;
+  }
+
+  @include mixins.bem("profile", "section-title") {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    i {
+      color: $primary;
+    }
+  }
+
+  @include mixins.bem("profile", "projects-list") {
+    display: flex;
+    gap: 1.5rem;
+    @include mixins.respond(mobile) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  @include mixins.bem("profile", "project") {
+    background: $secondary;
+    border-radius: $border-radius;
+    padding: 1.2rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex: 1 1 0;
+    min-width: 0;
+    .profile__project-icon {
+      font-size: 2.2rem;
+      color: $primary;
+      flex-shrink: 0;
+    }
+    .profile__project-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.3rem 0;
+    }
+    .profile__project-desc {
+      font-size: 0.98rem;
+      color: $muted;
+      margin-bottom: 0.4rem;
+    }
+    a {
+      color: $primary;
+      font-size: 0.97rem;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+  }
+
+  @include mixins.bem("profile", "experience-list") {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  @include mixins.bem("profile", "job") {
+    display: flex;
+    gap: 1.1rem;
+    align-items: flex-start;
+    .profile__job-logo {
+      font-size: 2.2rem;
+      color: $primary;
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+    .profile__job-title {
+      font-size: 1.08rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      span {
+        color: $muted;
+        font-weight: 400;
+      }
+    }
+    .profile__job-meta {
+      font-size: 0.97rem;
+      color: $muted;
+      margin-bottom: 0.3rem;
+    }
+    .profile__job-desc {
+      font-size: 0.97rem;
+      color: $text;
+    }
+  }
+
+  @include mixins.bem("profile", "education-list") {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    @include mixins.respond(mobile) {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+
+  @include mixins.bem("profile", "education-item") {
+    background: $secondary;
+    border-radius: $border-radius;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 180px;
+    i {
+      font-size: 1.7rem;
+      color: $primary;
+    }
+    .profile__education-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+    .profile__education-meta {
+      font-size: 0.95rem;
+      color: $muted;
+    }
+  }
+
+  @include mixins.bem("profile", "skills-list") {
+    display: flex;
+    gap: 2.5rem;
+    @include mixins.respond(mobile) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    > div {
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  @include mixins.bem("profile", "skills-category") {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 0.3rem;
+  }
+
+  @include mixins.bem("profile", "skill") {
+    display: inline-block;
+    background: $accent;
+    color: $primary;
+    border-radius: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.98rem;
+    margin: 0 0.3rem 0.3rem 0;
+  }
+
+  @include mixins.bem("profile", "tools-list") {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    @include mixins.respond(mobile) {
+      gap: 0.5rem;
+    }
+  }
+
+  @include mixins.bem("profile", "tool") {
+    background: $secondary;
+    border-radius: $border-radius;
+    padding: 0.7rem 1.1rem;
+    font-size: 1.05rem;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    i {
+      font-size: 1.3rem;
+    }
+  }
+}

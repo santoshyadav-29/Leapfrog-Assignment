@@ -1,0 +1,18 @@
+@mixin bem($block, $element: null, $modifier: null) {
+  $selector: $block;
+  @if $element {
+    $selector: "#{$block}__#{$element}";
+  }
+  @if $modifier {
+    $selector: "#{$selector}--#{$modifier}";
+  }
+  .#{$selector} {
+    @content;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 900px) { @content; }
+  }
+}
