@@ -1,169 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chiara Bianchi - Product Designer</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-</head>
-<body>
-  <main class="profile" role="main" aria-label="Profile Card">
-    <aside class="profile__sidebar" aria-label="Sidebar">
-      <img src="assets/chiara.png" alt="Chiara Bianchi smiling" class="profile__photo" />
-      <h1 class="profile__name">Chiara Bianchi</h1>
-      <p class="profile__role">Product Designer</p>
-      <blockquote class="profile__quote" aria-label="Design quote">
-        <i class="fas fa-quote-left" aria-hidden="true"></i>
-        Design isn’t finished until somebody is using it.
-        <footer>— Brenda Laurel</footer>
-      </blockquote>
-      <ul class="profile__contact" aria-label="Contact Information">
-        <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:chiarabianchi@gmail.com">chiarabianchi@gmail.com</a></li>
-        <li><i class="fas fa-globe" aria-hidden="true"></i> <a href="https://ui4designs.pt" target="_blank" rel="noopener">ui4designs.pt</a></li>
-        <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+393330123765">+39 333 0123 765</a></li>
-        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bologna, Italy</li>
-      </ul>
-      <nav class="profile__socials" aria-label="Social Links">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      </nav>
-      <section class="profile__languages" aria-label="Languages">
-        <div>
-          <span class="profile__flag" role="img" aria-label="Italian flag">🇮🇹</span> Italian <span class="profile__lang-level">Native</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiara Bianchi - Product Designer</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="profile" role="main" aria-label="Profile Card">
+      <aside class="profile__sidebar" aria-label="Sidebar">
+        <div class="profile__photo-wrapper">
+          <img
+            src="assets/chiara.png"
+            alt="Chiara Bianchi smiling"
+            class="profile__photo"
+          />
         </div>
-        <div>
-          <span class="profile__flag" role="img" aria-label="English flag">🇬🇧</span> English <span class="profile__lang-level">Native</span>
-        </div>
-        <div>
-          <span class="profile__flag" role="img" aria-label="Spanish flag">🇪🇸</span> Spanish <span class="profile__lang-level">Professional</span>
-        </div>
-        <div>
-          <span class="profile__flag" role="img" aria-label="Greek flag">🇬🇷</span> Greek <span class="profile__lang-level">Elementary</span>
-        </div>
-      </section>
-    </aside>
-    <section class="profile__main" aria-label="Main Content">
-      <section class="profile__section profile__projects" aria-label="Latest projects">
-        <h2 class="profile__section-title"><i class="fas fa-folder-open"></i> Latest projects</h2>
-        <div class="profile__projects-list">
-          <article class="profile__project">
-            <div class="profile__project-icon"><i class="fab fa-figma"></i></div>
-            <div>
-              <h3 class="profile__project-title">Powerful Design System</h3>
-              <p class="profile__project-desc">Figma UI Kit and Design System targeting a wide variety of use cases.</p>
-              <a href="https://figma.com" target="_blank" rel="noopener">https://figma.com</a>
-            </div>
-          </article>
-          <article class="profile__project">
-            <div class="profile__project-icon"><i class="fas fa-globe"></i></div>
-            <div>
-              <h3 class="profile__project-title">Modern Website</h3>
-              <p class="profile__project-desc">Powerful website & dashboard template for your next Chakra UI project.</p>
-              <a href="https://ui-8.net" target="_blank" rel="noopener">https://ui-8.net</a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="profile__section profile__experience" aria-label="Experience">
-        <h2 class="profile__section-title"><i class="fas fa-briefcase"></i> Experience</h2>
-        <div class="profile__experience-list">
-          <article class="profile__job">
-            <div class="profile__job-logo"><i class="fab fa-apple"></i></div>
-            <div>
-              <h3 class="profile__job-title">Product Designer <span>@ Apple</span></h3>
-              <div class="profile__job-meta">Jan 2022 - Ongoing · Cupertino</div>
-              <p class="profile__job-desc">Designing and prototyping user interfaces for Apple products, focusing on usability and accessibility.</p>
-            </div>
-          </article>
-          <article class="profile__job">
-            <div class="profile__job-logo"><i class="fab fa-google"></i></div>
-            <div>
-              <h3 class="profile__job-title">Design System Architect <span>@ Google</span></h3>
-              <div class="profile__job-meta">Sep 2016 - Aug 2021 · Mountain View</div>
-              <p class="profile__job-desc">Created and maintained scalable design systems for Google’s suite of products, collaborating with cross-functional teams.</p>
-            </div>
-          </article>
-          <article class="profile__job">
-            <div class="profile__job-logo"><i class="fas fa-vector-square"></i></div>
-            <div>
-              <h3 class="profile__job-title">Graphic Designer <span>@ Vectormator</span></h3>
-              <div class="profile__job-meta">Sep 2012 - Sep 2016 · Berlin</div>
-              <p class="profile__job-desc">Led a tight-knit international design team. Championed impactful visual communication and branding projects.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="profile__section profile__education" aria-label="Education">
-        <h2 class="profile__section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
-        <div class="profile__education-list">
-          <div class="profile__education-item">
-            <i class="fas fa-cubes"></i>
-            <div>
-              <div class="profile__education-title">Build a design system</div>
-              <div class="profile__education-meta">Memorisely · Oct 2020</div>
-            </div>
-          </div>
-          <div class="profile__education-item">
-            <i class="fas fa-certificate"></i>
-            <div>
-              <div class="profile__education-title">UX Design certificate</div>
-              <div class="profile__education-meta">UX academy · Feb 2020</div>
-            </div>
-          </div>
-          <div class="profile__education-item">
-            <i class="fas fa-search"></i>
-            <div>
-              <div class="profile__education-title">Users research course</div>
-              <div class="profile__education-meta">Coursera · Dec 2020</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="profile__section profile__skills" aria-label="Skills">
-        <h2 class="profile__section-title"><i class="fas fa-lightbulb"></i> Skills</h2>
-        <div class="profile__skills-list">
+        <h1 class="profile__name">Chiara Bianchi</h1>
+        <p class="profile__role">Product Designer</p>
+        <blockquote class="profile__quote" aria-label="Design quote">
+          <i class="fas fa-quote-left" aria-hidden="true"></i>
+          Design isn’t finished until somebody is using it.
+          <footer>Brenda Laurel</footer>
+        </blockquote>
+        <ul class="profile__contact" aria-label="Contact Information">
+          <li>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+            <a href="mailto:chiarabianchi@gmail.com">chiarabianchi@gmail.com</a>
+          </li>
+          <li>
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span>Website</span>
+            <a href="https://aldesign.it" target="_blank" rel="noopener"
+              >aldesign.it</a
+            >
+          </li>
+          <li>
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <span>Phone</span>
+            <a href="tel:+393330123765">+39 333 0123 765</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>Address</span>
+            Bologna, Italy
+          </li>
+        </ul>
+        <hr class="profile__divider" aria-hidden="true" />
+        <section class="profile__socials" aria-label="Socials">
           <div>
-            <div class="profile__skills-category">Design</div>
-            <span class="profile__skill">Web Design</span>
-            <span class="profile__skill">Mobile Design</span>
-            <span class="profile__skill">User Experience</span>
-            <span class="profile__skill">Wireframing</span>
-            <span class="profile__skill">Prototyping</span>
-            <span class="profile__skill">Tasking</span>
-            <span class="profile__skill">Design System</span>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+            <a href="#" aria-label="Instagram">@chiara.designs</a>
           </div>
           <div>
-            <div class="profile__skills-category">Development</div>
-            <span class="profile__skill">React JS</span>
-            <span class="profile__skill">Chakra UI</span>
-            <span class="profile__skill">Emotion</span>
-            <span class="profile__skill">Framer</span>
-            <span class="profile__skill">TypeScript</span>
-            <span class="profile__skill">Next JS</span>
-            <span class="profile__skill">HTML</span>
-            <span class="profile__skill">CSS</span>
-            <span class="profile__skill">JS</span>
+            <i class="fab fa-dribbble" aria-hidden="true"></i>
+            <span>Dribbble</span>
+            <a href="#" aria-label="Dribbble">@chiara-designs</a>
           </div>
-        </div>
+          <div>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <span>Twitter</span>
+            <a href="#" aria-label="Twitter">@chiaradesigns</a>
+          </div>
+          <div>
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+            <a href="#" aria-label="LinkedIn">chiara-bianchi-123</a>
+          </div>
+        </section>
+        <hr class="profile__divider" aria-hidden="true" />
+        <section class="profile__languages" aria-label="Languages">
+          <div>
+            <span class="profile__flag" role="img" aria-label="Italian flag"
+              >🇮🇹</span
+            >
+            <span>Italian</span>
+            <span class="profile__lang-level">Native</span>
+          </div>
+          <div>
+            <span class="profile__flag" role="img" aria-label="Greek flag"
+              >🇬🇷</span
+            >
+            <span>Greek</span>
+            <span class="profile__lang-level">Native</span>
+          </div>
+          <div>
+            <span class="profile__flag" role="img" aria-label="UK flag"
+              >🇬🇧</span
+            >
+            <span>English</span>
+            <span class="profile__lang-level">Professional working</span>
+          </div>
+          <div>
+            <span class="profile__flag" role="img" aria-label="Spanish flag"
+              >🇪🇸</span
+            >
+            <span>Spanish</span>
+            <span class="profile__lang-level">Elementary</span>
+          </div>
+        </section>
+      </aside>
+      <section class="profile__main" aria-label="Main Content">
+        <section
+          class="profile__section profile__projects"
+          aria-label="Latest projects"
+        >
+          <h2 class="profile__section-title">
+            <i class="fas fa-circle"></i> Latest projects
+          </h2>
+          <div class="profile__projects-list">
+            <article class="profile__project">
+              <div class="profile__project-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <div>
+                <h3 class="profile__project-title">Powerful Design System</h3>
+                <p class="profile__project-desc">
+                  Figma UI Kit and Design System targeting a wide variety of use
+                  cases.
+                </p>
+                <a href="https://figma.com" target="_blank" rel="noopener"
+                  >https://figma.com</a
+                >
+              </div>
+            </article>
+            <article class="profile__project">
+              <div class="profile__project-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>
+                <h3 class="profile__project-title">Modern Website</h3>
+                <p class="profile__project-desc">
+                  Powerful website & dashboard template for your next Chakra UI
+                  project.
+                </p>
+                <a href="https://ui-8.net" target="_blank" rel="noopener"
+                  >https://ui-8.net</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+        <section
+          class="profile__section profile__experience"
+          aria-label="Experience"
+        >
+          <h2 class="profile__section-title">
+            <i class="fas fa-circle"></i> Experience
+          </h2>
+          <div class="profile__experience-list">
+            <article class="profile__job">
+              <div class="profile__job-logo"><i class="fab fa-apple"></i></div>
+              <div>
+                <h3 class="profile__job-title">
+                  Product Designer <span>@ Apple</span>
+                </h3>
+                <div class="profile__job-meta">
+                  Jan 2022 - Ongoing · Cupertino
+                </div>
+                <p class="profile__job-desc">
+                  Designing and prototyping user interfaces for Apple products,
+                  focusing on usability and accessibility.
+                </p>
+              </div>
+            </article>
+            <article class="profile__job">
+              <div class="profile__job-logo"><i class="fab fa-google"></i></div>
+              <div>
+                <h3 class="profile__job-title">
+                  UI Designer <span>@ Tesla</span>
+                </h3>
+                <div class="profile__job-meta">
+                  Oct 2020 - Sep 2021 · Austin
+                </div>
+                <p class="profile__job-desc">
+                  Worked on dashboard UI and user experience for electric
+                  vehicle control systems and infotainment.
+                </p>
+              </div>
+            </article>
+            <article class="profile__job">
+              <div class="profile__job-logo"><i class="fab fa-google"></i></div>
+              <div>
+                <h3 class="profile__job-title">
+                  Design System Architect <span>@ Google</span>
+                </h3>
+                <div class="profile__job-meta">
+                  Sep 2016 - Aug 2021 · Mountain View
+                </div>
+                <p class="profile__job-desc">
+                  Created and maintained scalable design systems for Google’s
+                  suite of products, collaborating with cross-functional teams.
+                </p>
+              </div>
+            </article>
+            <article class="profile__job">
+              <div class="profile__job-logo">
+                <i class="fas fa-vector-square"></i>
+              </div>
+              <div>
+                <h3 class="profile__job-title">
+                  Graphic Designer <span>@ Vectormator</span>
+                </h3>
+                <div class="profile__job-meta">
+                  Sep 2012 - Sep 2016 · Berlin
+                </div>
+                <p class="profile__job-desc">
+                  Led a tight-knit international design team. Championed
+                  impactful visual communication and branding projects.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section
+          class="profile__section profile__education"
+          aria-label="Education"
+        >
+          <h2 class="profile__section-title">
+            <i class="fas fa-circle"></i> Education
+          </h2>
+          <div class="profile__education-list">
+            <div class="profile__education-item">
+              <i class="fas fa-cubes"></i>
+              <div>
+                <div class="profile__education-title">
+                  Build a design system
+                </div>
+                <div class="profile__education-meta">Memorisely · Oct 2020</div>
+              </div>
+            </div>
+            <div class="profile__education-item">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <div class="profile__education-title">
+                  UX Design certificate
+                </div>
+                <div class="profile__education-meta">UX academy · Feb 2020</div>
+              </div>
+            </div>
+            <div class="profile__education-item">
+              <i class="fas fa-search"></i>
+              <div>
+                <div class="profile__education-title">
+                  Users research course
+                </div>
+                <div class="profile__education-meta">Coursera · Dec 2020</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="profile__section profile__skills" aria-label="Skills">
+          <h2 class="profile__section-title">
+            <i class="fas fa-circle"></i> Skills
+          </h2>
+          <div class="profile__skills-list">
+            <div>
+              <div class="profile__skills-category">Design</div>
+              <span class="profile__skill">Web Design</span>
+              <span class="profile__skill">Mobile Design</span>
+              <span class="profile__skill">User Experience</span>
+              <span class="profile__skill">Wireframing</span>
+              <span class="profile__skill">Prototyping</span>
+              <span class="profile__skill">Tasking</span>
+              <span class="profile__skill">Design System</span>
+            </div>
+            <div>
+              <div class="profile__skills-category">Development</div>
+              <span class="profile__skill">React JS</span>
+              <span class="profile__skill">Chakra UI</span>
+              <span class="profile__skill">Emotion</span>
+              <span class="profile__skill">Framer</span>
+              <span class="profile__skill">TypeScript</span>
+              <span class="profile__skill">Next JS</span>
+              <span class="profile__skill">HTML</span>
+              <span class="profile__skill">CSS</span>
+              <span class="profile__skill">JS</span>
+            </div>
+          </div>
+        </section>
+        <section class="profile__section profile__tools" aria-label="Tools">
+          <h2 class="profile__section-title">
+            <i class="fas fa-circle"></i> Tools
+          </h2>
+          <div class="profile__tools-list">
+            <div class="profile__tool"><i class="fab fa-figma"></i> Figma</div>
+            <div class="profile__tool"><i class="fas fa-vial"></i> Maze</div>
+            <div class="profile__tool"><i class="fas fa-cube"></i> Spline</div>
+            <div class="profile__tool">
+              <i class="fas fa-project-diagram"></i> Zeplin
+            </div>
+            <div class="profile__tool">
+              <i class="fas fa-vector-square"></i> Vectomator
+            </div>
+            <div class="profile__tool">
+              <i class="fas fa-sync-alt"></i> Rotato
+            </div>
+            <div class="profile__tool"><i class="fas fa-code"></i> VS Code</div>
+            <div class="profile__tool"><i class="fab fa-apple"></i> Xcode</div>
+            <div class="profile__tool">
+              <i class="fas fa-database"></i> Notion
+            </div>
+          </div>
+        </section>
       </section>
-      <section class="profile__section profile__tools" aria-label="Tools">
-        <h2 class="profile__section-title"><i class="fas fa-tools"></i> Tools</h2>
-        <div class="profile__tools-list">
-          <div class="profile__tool"><i class="fab fa-figma"></i> Figma</div>
-          <div class="profile__tool"><i class="fas fa-vial"></i> Maze</div>
-          <div class="profile__tool"><i class="fas fa-cube"></i> Spline</div>
-          <div class="profile__tool"><i class="fas fa-project-diagram"></i> Zeplin</div>
-          <div class="profile__tool"><i class="fas fa-vector-square"></i> Vectomator</div>
-          <div class="profile__tool"><i class="fas fa-sync-alt"></i> Rotato</div>
-          <div class="profile__tool"><i class="fas fa-code"></i> VS Code</div>
-          <div class="profile__tool"><i class="fab fa-apple"></i> Xcode</div>
-          <div class="profile__tool"><i class="fas fa-database"></i> Notion</div>
-        </div>
-      </section>
-    </section>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
